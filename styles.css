@@ -1,0 +1,6 @@
+/* Hide 'For You' navigation items, tab links, and buttons by aria-labels and text attributes */
+a[aria-label*="For You" i],
+button[aria-label*="For You" i],
+[role="tab"][aria-label*="For You" i] {
+  display: none !important;
+}

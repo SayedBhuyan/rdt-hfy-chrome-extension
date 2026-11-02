@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit - Hide For You Tab",
+  "version": "1.0",
+  "description": "Hides the 'For You' tab on Reddit.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.reddit.com/*", "https://sh.reddit.com/*"],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
